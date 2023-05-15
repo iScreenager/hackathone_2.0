@@ -1,0 +1,22 @@
+body{
+ text-align: center;
+ display:inline-block;
+ margin-left: 450px;
+
+  
+}
+#form{
+  border: 2px solid rgb(234, 231, 231);
+  box-shadow:  10px 5px 5px rgb(212, 204, 204);;
+  width:400px;
+  height: 400px;
+  padding: 25px;
+}
+div{
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+padding: 20px;
+  
+}
+
