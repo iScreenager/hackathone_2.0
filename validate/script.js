@@ -1,7 +1,7 @@
 let form = document.getElementById("form");
 
 let fnameMsg = document.getElementById("fnameMsg");
-let pin = document.getElementById("Pin");
+
 let pinMsg = document.getElementById("PinMsg");
 
 form.addEventListener("submit",(e)=>{
@@ -25,14 +25,13 @@ let userNameRange = () => {
 };
 
 
-let str = pin.value;
- function isAlphanumeric(str) {
-    return /^[a-zA-Z0-9]+$/.test(str);
-  }
+ const isAlphanumeric = () => {
+    let pin = document.getElementById("Pin").value;
+    let isAlpha = /^[a-zA-Z0-9]+$/.test(pin);
+    if(isAlpha){
+        pinMsg.innerHTML ="Pin Should be alpha numeric";
 
-  if(msg != true){
-
-    console.log("wrong");
-  }else{
-    console.log("right");
+    }else{
+        pinMsg.innerHTML = "";
+    }
   }
