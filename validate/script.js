@@ -29,7 +29,7 @@ let userNameRange = () => {
     let pin = document.getElementById("Pin").value;
     let isAlpha = /^[a-zA-Z0-9]+$/.test(pin);
     if(isAlpha){
-        pinMsg.innerHTML ="Pin Should be alpha numeric";
+        pinMsg.innerHTML ="Pin Should be alpha numeric. Pin sholud combination of 0-9 number and letters A to Z";
 
     }else{
         pinMsg.innerHTML = "";
